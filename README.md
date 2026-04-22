@@ -17,7 +17,7 @@ This reflects the difference between MySQL and PostgreSQL:
 - MySQL → storage-focused system (backend holds most intelligence)
 - PostgreSQL → domain-aware system (intelligence shared between DB and backend)
 
-
+---
 
 ## 2. Core Problem Definition
 
@@ -29,7 +29,7 @@ But instead:
 
 > How should intelligence and business logic be distributed in the system?
 
-
+---
 
 ## 3. Architectural Models
 
@@ -42,7 +42,7 @@ But instead:
 **Result:**
 - Backend becomes complex over time
 
-
+---
 
 ### 3.2 Domain-Centric Model (PostgreSQL-Oriented)
 
@@ -53,7 +53,7 @@ But instead:
 **Result:**
 - Stronger data integrity and cleaner architecture
 
-
+---
 
 ## 4. Decision Comparison (Improved Visual Chart)
 
@@ -68,11 +68,11 @@ But instead:
 | Business Logic Location    | Backend only             | Shared (DB + Backend)        | Domain-driven → PostgreSQL |
 | Maintenance Cost (Long-term)| ⭐⭐⭐                    | ⭐⭐⭐⭐⭐ (Lower)              | Long-term systems → PostgreSQL |
 
-
+---
 
 ### 4.2 Quick Decision Guide (At a Glance)
 
-
+```
 IF project = simple CRUD OR MVP OR fast launch
     → Choose MySQL
 
@@ -80,7 +80,7 @@ IF project = complex logic OR scaling system OR enterprise architecture
     → Choose PostgreSQL
 ```
 
-
+---
 
 ## 5. Key Architectural Insight
 
